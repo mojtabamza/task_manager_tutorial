@@ -1,0 +1,9 @@
+
+#git ignore 
+
+bin/*
+obj/*
+*.cbp
+*.depend
+*.layout
+
