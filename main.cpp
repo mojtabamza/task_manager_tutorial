@@ -27,9 +27,6 @@ void task_B(void) {
 
 int main(void) {
 
-    //_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
-    _CrtSetReportMode( _CRT_WARN, _CRTDBG_MODE_DEBUG );
-
     Systick_t::get_instance()->add_task(task_a, 10);
     Systick_t::get_instance()->add_task(task_b, 14);
 
