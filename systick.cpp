@@ -23,7 +23,7 @@ void Systick_t::add_task(void(*task)(void), int interval) {
 
 void Systick_t::systick_isr(void) {
     this->tick();
-    for(auto i = 0; i < this->task.size(); i++) {
+    for(std::size_t i = 0; i < this->task.size(); i++) {
         if(task[i]->task_exe_time == tick_counter) {
             //task[i]->task();
             task[i]->task_exe_time = tick_counter + task[i]->interval;
@@ -34,7 +34,7 @@ void Systick_t::systick_isr(void) {
 }
 void Systick_t::systick_handler(void) {
     static int timer = 0;
-    if(++timer >= 100000) {
+    if(++timer >= 5000000) {
         this->systick_isr();
         timer = 0;
     }

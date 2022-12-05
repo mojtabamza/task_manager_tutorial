@@ -3,7 +3,7 @@
 #include "systick.hpp"
 #define _CRTDBG_MAP_ALLOC
 #include <cstdlib>
-#include <crtdbg.h>
+//#include <crtdbg.h>
 
 
 void task_A(void) {
