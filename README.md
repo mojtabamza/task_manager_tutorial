@@ -1,5 +1,7 @@
 # task_manager_tutorial 
 #it's designed for educational purposes
+#
+#
 
 *This is a simple task manager (time scheduler) for implementing in embedded systems that do not support OS. 
 *The code only manages the time for executing tasks without controlling resource.
